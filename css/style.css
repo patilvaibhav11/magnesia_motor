@@ -566,15 +566,15 @@ a.slide-btn:hover:before, a.slide-btn:active::before {
 	background-attachment: fixed !important;
 }
 .slide-1, .text-slide {
-	background: url(../images/banner1.jpg);
+	background: url(../images/banners/BLDC.jpg);
 	background-size: cover
 }
 .slide-2 {
-	background: url(../images/banner2.jpg);
+	background: url(../images/banners/magnesia-motor.jpg);
 	background-size: cover
 }
 .slide-3 {
-	background: url(../images/banner3.jpg);
+	background: url(../images/banners/PMSM.jpg);
 	background-size: cover
 }
 .single-slide-item {
