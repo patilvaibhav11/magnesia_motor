@@ -278,7 +278,7 @@ header {
 .top-header-add li {
 	float: left;
 	list-style: outside none none;
-	margin-right: 30px;
+	margin-right: 21px;
 	width: auto;
 	font-size: 14px;
 }
@@ -1076,7 +1076,7 @@ a.slide-btn:hover:before, a.slide-btn:active::before {
 .single-team-member .author-info ul li i {
 	font-size: 11px;
 	background: #0f75bc;
-	margin-right: 10px;
+	margin-right: 7px;
 	color: #fff;
 	border-radius: 1px;
 	height: 15px;
@@ -2775,11 +2775,10 @@ li.threaded-comments {
 	}
 }
 
-
+/* 
 .about-us-image{
 	width: 600px;
-	/* margin-top: 20px; */
+	margin-top: 20px;
 	border: none;
 	outline: none;
-	
-}
+} */
