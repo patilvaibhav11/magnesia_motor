@@ -9,3 +9,15 @@
     width: 80px;
     padding: 2px;
 }
+
+@media (min-width: 1020px){
+    .our-blogs{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+h2.headingBanner {
+    -webkit-text-stroke-width: thin;
+    font-variant-position: super;
+}

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!-- Magnesia Motor -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,19 +48,21 @@
           <div class="col-sm-12 col-md-9">
             <div class="top-header-add">
               <ul>
-                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Address :</span> Sr no 62/79/1, Kuruli, Nashik Road, Pune</li>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Address :</span> Sr no 62/79/1, Kuruli,
+                  Nashik Road, Pune</li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i><span>Call us :</span> +91 7758938199</li>
-                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:enquiry@magnesiamotor.com"><span>Email :</span>
-                  enquiry@magnesiamotor.com</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a
+                    href="mailto:enquiry@magnesiamotor.com"><span>Email :</span>
+                    enquiry@magnesiamotor.com</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-3 hidden-sm">
             <ul class="header-social-icons">
-              <li class="facebook"><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <!-- <li class="facebook"><a href="javascript:void(0)" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li class="twitter"><a href="javascript:void(0)" target="_blank"><i class="fa fa-twitter"></i></a></li>
               <li class="linkedin"><a href="javascript:void(0)" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li class="youtube"><a href="javascript:void(0)" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li class="youtube"><a href="javascript:void(0)" target="_blank"><i class="fa fa-youtube"></i></a></li> -->
             </ul>
           </div>
         </div>
@@ -77,8 +80,8 @@
                 data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle
                   navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
                   class="icon-bar"></span> </button>
-             <a class="navbar-brand" href="index.html"><img class="homePageLogo" src="./images/logo/MM - 130X123 px.jpg"
-                  alt="ElectricalPlus" /></a>
+              <a class="navbar-brand" href="index.html"><img class="homePageLogo"
+                  src="./images/logo/MM - 130X123 px.jpg" alt="ElectricalPlus" /></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -107,7 +110,7 @@
                       class="fa hover-inn hover-inn fa-caret-down"></i></a>
                   <ul class="sub-menu">
                     <li><a href="blog-list.html">Blog List</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
+                    <li><a href="blog-details.html?id=c4ca4238a0b923820dcc509a6f75849b">Blog Details</a></li>
                   </ul>
                 </li>
                 <li class="active"> <a href="contact-us.html">Contact Us</a> </li>
@@ -153,32 +156,32 @@
             <span>Any Question? Dropus a Note</span>
           </div>
           <div class="contact-form">
-            <form>
+            <form id="emailForm" action="sendEmail.php" method="post">
               <div class="field">
-                <label>Enter Name</label>
-                <input placeholder="" type="text">
+                <label for="name">Enter Name</label>
+                <input type="text" id="name" name="name" placeholder="">
               </div>
               <div class="field">
-                <label>Your Email</label>
-                <input placeholder="" type="email">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="">
               </div>
               <div class="field">
-                <label>Subject</label>
-                <input placeholder="" type="text">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="">
               </div>
               <div class="field">
-                <label>Message</label>
-                <textarea></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
               </div>
               <button class="btn" type="submit">Send Message</button>
-            </form>
+            </form>            
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="google-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198710.35112897935!2d-98.51489117772236!3d38.904562823631146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1471865832140"
-              allowfullscreen=""></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.614489854512!2d73.84445977879692!3d18.726069937047395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c997fe1dd839%3A0xae610c90d54620c9!2sKuruli!5e0!3m2!1sen!2sin!4v1703069488850!5m2!1sen!2sin"
+              allowfullscreen="true"></iframe>
           </div>
           <div class="contact-infos">
             <div class="row">
@@ -188,19 +191,19 @@
                   <ul class="contact-info">
                     <li><i class="fa fa-phone"></i> 0123-456-789</li>
                     <li><i class="fa fa-envelope"></i> enquiry@magnesiamotor.com </li>
-                    <li><i class="fa fa-home"></i> 27 San Francisco, CA, USA. </li>
+                    <li><i class="fa fa-home"></i> Sr no 62/79/1, Kuruli, Nashik Road, Pune </li>
                   </ul>
                 </div>
                 <!-- Widget -->
               </div>
               <div class="col-md-6">
                 <div class="widget">
-                  <h4 class="widget-title">Social Profiles</h4>
-                  <p>You Fallow us on Social Media.</p>
+                  <!-- <h4 class="widget-title">Social Profiles</h4>
+                  <p>You Fallow us on Social Media.</p> -->
                   <div class="social-links">
-                    <a title="" href="#"><i class="fa fa-facebook"></i></a> 
-                    <a title="" href="#"><i class="fa fa-twitter"></i></a> 
-                    <a title="" href="#"><i class="fa fa-linkedin"></i></a>  
+                    <!-- <a title="" href="#"><i class="fa fa-facebook"></i></a>
+                    <a title="" href="#"><i class="fa fa-twitter"></i></a>
+                    <a title="" href="#"><i class="fa fa-linkedin"></i></a> -->
                   </div>
                 </div>
                 <!-- Widget -->
@@ -213,7 +216,7 @@
   </div>
   <!-- Inner Page Wrapper End -->
   <!-- Our counters -->
-  <div class="counters">
+  <!-- <div class="counters">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
@@ -246,14 +249,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Our counters End -->
   <!-- Testimonials Wrapper Start -->
   <div class="testimonials-wrapper">
     <div class="container">
       <div class="title">
         <h2>Client Testimonials</h2>
-        <span><i class="bi bi-bulb" aria-hidden="true"></i></span>
+        <span></span> <img src="images/title-icon.png" alt="">
       </div>
       <div class="col-lg-8 col-lg-offset-2">
         <div id="testimonial" class="owl-carousel owl-theme">
@@ -261,11 +264,8 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
-                  <small>Client Name</small>
+                  <p>Choosing Magnesia Motors was a pivotal decision for our business. Their service stands out with promptness, reliability, and a keen understanding of our unique needs. The team's dedication to excellence and proactive problem-solving have significantly contributed to our success. Magnesia Motors is not just a supplier; they are a valued partner in our journey. Highly recommended for anyone seeking top-tier service in the industry. </p>
+                  <small>Vikram Bodke</small>
                 </div>
               </div>
             </blockquote>
@@ -274,11 +274,8 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
-                  <small>Client Name</small>
+                  <p>Magnesia Motors has transformed our operations with their exceptional service. Their expertise, professionalism, and commitment to customer satisfaction have exceeded our expectations. From customized solutions to on-time delivery, they consistently demonstrate reliability and innovation. Magnesia Motors is an integral part of our success, and we look forward to continuing this partnership for years to come. </p>
+                  <small>Vishal Bagul</small>
                 </div>
               </div>
             </blockquote>
@@ -287,11 +284,8 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
-                  <small>Client Name</small>
+                  <p>In the competitive landscape of IT solutions, Magnesia Motors truly shines. Their service goes beyond fixing immediate issues; it's about foreseeing and preventing challenges. The proactive approach of their expert team has streamlined our IT infrastructure, ensuring seamless operations. We rely on Magnesia Motors for their consistent delivery of high-quality service, making them an indispensable partner in our technology journey. </p>
+                  <small>Gauri Shewale</small>
                 </div>
               </div>
             </blockquote>
@@ -300,11 +294,8 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. </p>
-                  <small>Client Name</small>
+                  <p>Magnesia Motors has redefined what we expect from a service provider. Their precision and attention to detail set them apart in the market. As an event planner, I need reliability, and Magnesia Motors consistently delivers. Their team's professionalism and commitment to flawless execution make them a trusted partner for every event. For anyone seeking a service that exceeds expectations, Magnesia Motors is the name to trust. </p>
+                  <small>Akshay Khairnar</small>
                 </div>
               </div>
             </blockquote>
@@ -339,14 +330,14 @@
                 <h3>About Us</h3>
               </div>
               <div class="footer-widget-content">
-                <p>Magnesia Motor is Permanent Magnet Motor Design, Development & manufacturing company.  </p>
-<p>We manufacture permanent magnet motors for various Applications.</p>
+                <p>Magnesia Motor is Permanent Magnet Motor Design, Development & manufacturing company. </p>
+                <p>We manufacture permanent magnet motors for various Applications.</p>
                 <ul class="footer-social-menu list-inline">
-                  <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
+                  <!-- <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
                   <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i></a></li>
                   <li><a href="javascript:void(0)"><i class="fa fa-linkedin-square"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="fa fa-skype"></i></a></li>
+                  <li><a href="javascript:void(0)"><i class="fa fa-skype"></i></a></li> -->
                 </ul>
               </div>
             </div>
@@ -379,12 +370,15 @@
                 <h3>Contact Us</h3>
               </div>
               <div class="footer-widget-content">
-                <p>For any inquiries or assistance regarding our permanent magnet motors, please don't hesitate to reach out to us. We're here to help.</p>
+                <p>For any inquiries or assistance regarding our permanent magnet motors, please don't hesitate to reach
+                  out to us. We're here to help.</p>
                 <ul class="footer-conatct-menu">
                   <li> <a href="enquiry@magnesiamotor.com"><i class="fa fa-envelope"></i><span>Email :</span>
-                    enquiry@magnesiamotor.com</a> </li>
-                  <li> <a href="javascript:void(0)"><i class="fa fa-phone"></i> <span>Phone : </span> +91 7758938199</a> </li>
-                  <li> <a href="javascript:void(0)"><i class="fa fa-map-o"></i><span>Address :</span> Sr no 62/79/1, Kuruli, Nashik Road, Pune</a> </li>
+                      enquiry@magnesiamotor.com</a> </li>
+                  <li> <a href="javascript:void(0)"><i class="fa fa-phone"></i> <span>Phone : </span> +91 7758938199</a>
+                  </li>
+                  <li> <a href="javascript:void(0)"><i class="fa fa-map-o"></i><span>Address :</span> Sr no 62/79/1,
+                      Kuruli, Nashik Road, Pune</a> </li>
                 </ul>
               </div>
             </div>
@@ -402,7 +396,7 @@
     </div>
     <div class="copyright-wrapper">
       <div class="container">
-        <p>&copy; Copyright 2023, Electric Plus | All Rights Reserved.</p>
+        <p>&copy; Copyright 2023, Magnesia Motor | All Rights Reserved.</p>
       </div>
     </div>
   </div>
@@ -419,4 +413,5 @@
   <script src="js/custom.js"></script>
 </body>
 <!-- Magnesia Motor -->
+
 </html>
