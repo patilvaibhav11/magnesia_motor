@@ -421,32 +421,33 @@
             <span style="text-align: center;"><b>Please Make your Inquiry here !</b></span>
           </div>
           <div class="contact-form">
-            <form>
+            <form method="post" action="sendEmailTwo.php" id="contact-form">
               <div class="field">
                 <label>Enter Name</label>
-                <input placeholder="Enter you full name" type="text">
+                <input placeholder="Enter you full name" id="name" name="name" type="text">
               </div>
               <div class="field">
                 <label>Your Email</label>
-                <input placeholder="youremail@gmail.com" type="email">
+                <input placeholder="youremail@gmail.com" id="email" name="email" type="email">
               </div>
               <div class="field">
                 <label>Enter your ph. no.</label>
-                <input placeholder="+91 00000 00000" type="email">
+                <input placeholder="+91 00000 00000" id="contact_no" name="contact_no" type="email">
               </div>
               <div class="field">
                 <label>Select Product</label>
-                <select name="" id="">
+                <select name="product" id="product">
                   <!-- <option value="" selected disabled></option> -->
-                  <option value="">BLDC(Brushless DC Permanent
+                  <option value="BLDC(Brushless DC Permanent
+                  Magnet Motors)">BLDC(Brushless DC Permanent
                     Magnet Motors)</option>
-                  <option value="">PMSM(Permanent Magnet Synchronous Motors)</option>
-                  <option value="">Axial Flux Motors</option>
+                  <option value="PMSM(Permanent Magnet Synchronous Motors)">PMSM(Permanent Magnet Synchronous Motors)</option>
+                  <option value="Axial Flux Motors">Axial Flux Motors</option>
                 </select>
               </div>
               <div class="field">
                 <label>Enter your requirment</label>
-                <textarea placeholder="Please enter your requirment in detail "></textarea>
+                <textarea placeholder="Please enter your requirment in detail" name="message" id="message"></textarea>
               </div>
               <div class="field" style="text-align: center;">
                 <!-- <button type="button" onclick="closePopup()" style="
