@@ -75,7 +75,7 @@
         <div class="col-md-12 col-sm-12  col-xs-12 mainmenu-area no-padding">
           <nav class="navbar navbar-default mean-nav">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header inner">
+            <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                 data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle
                   navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
@@ -88,6 +88,7 @@
               <ul class="mobile-menu nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <!-- <li><a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
                     aria-haspopup="true" aria-expanded="false">Services <i class="fa hover-inn fa-caret-down"></i></a>
                   <ul class="sub-menu">
@@ -105,8 +106,8 @@
                     <li><a href="gallery.html">Gallery</a></li>
                   </ul>
                 </li> -->
-                <li> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                    aria-haspopup="true" aria-expanded="false">Blog <i
+                <li> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
+                    role="button" aria-haspopup="true" aria-expanded="false">Blog <i
                       class="fa hover-inn hover-inn fa-caret-down"></i></a>
                   <ul class="sub-menu">
                     <li><a href="blog-list.html">Blog List</a></li>
@@ -174,7 +175,8 @@
                 <textarea id="message" name="message"></textarea>
               </div>
               <button class="btn" type="submit">Send Message</button>
-            </form>            
+              <p class="form-messege"></p>
+            </form>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -264,7 +266,11 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Choosing Magnesia Motors was a pivotal decision for our business. Their service stands out with promptness, reliability, and a keen understanding of our unique needs. The team's dedication to excellence and proactive problem-solving have significantly contributed to our success. Magnesia Motors is not just a supplier; they are a valued partner in our journey. Highly recommended for anyone seeking top-tier service in the industry. </p>
+                  <p>Choosing Magnesia Motors was a pivotal decision for our business. Their service stands out with
+                    promptness, reliability, and a keen understanding of our unique needs. The team's dedication to
+                    excellence and proactive problem-solving have significantly contributed to our success. Magnesia
+                    Motors is not just a supplier; they are a valued partner in our journey. Highly recommended for
+                    anyone seeking top-tier service in the industry. </p>
                   <small>Vikram Bodke</small>
                 </div>
               </div>
@@ -274,7 +280,11 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Magnesia Motors has transformed our operations with their exceptional service. Their expertise, professionalism, and commitment to customer satisfaction have exceeded our expectations. From customized solutions to on-time delivery, they consistently demonstrate reliability and innovation. Magnesia Motors is an integral part of our success, and we look forward to continuing this partnership for years to come. </p>
+                  <p>Magnesia Motors has transformed our operations with their exceptional service. Their expertise,
+                    professionalism, and commitment to customer satisfaction have exceeded our expectations. From
+                    customized solutions to on-time delivery, they consistently demonstrate reliability and innovation.
+                    Magnesia Motors is an integral part of our success, and we look forward to continuing this
+                    partnership for years to come. </p>
                   <small>Vishal Bagul</small>
                 </div>
               </div>
@@ -284,7 +294,11 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>In the competitive landscape of IT solutions, Magnesia Motors truly shines. Their service goes beyond fixing immediate issues; it's about foreseeing and preventing challenges. The proactive approach of their expert team has streamlined our IT infrastructure, ensuring seamless operations. We rely on Magnesia Motors for their consistent delivery of high-quality service, making them an indispensable partner in our technology journey. </p>
+                  <p>In the competitive landscape of IT solutions, Magnesia Motors truly shines. Their service goes
+                    beyond fixing immediate issues; it's about foreseeing and preventing challenges. The proactive
+                    approach of their expert team has streamlined our IT infrastructure, ensuring seamless operations.
+                    We rely on Magnesia Motors for their consistent delivery of high-quality service, making them an
+                    indispensable partner in our technology journey. </p>
                   <small>Gauri Shewale</small>
                 </div>
               </div>
@@ -294,7 +308,11 @@
             <blockquote>
               <div class="row">
                 <div class="col-lg-12">
-                  <p>Magnesia Motors has redefined what we expect from a service provider. Their precision and attention to detail set them apart in the market. As an event planner, I need reliability, and Magnesia Motors consistently delivers. Their team's professionalism and commitment to flawless execution make them a trusted partner for every event. For anyone seeking a service that exceeds expectations, Magnesia Motors is the name to trust. </p>
+                  <p>Magnesia Motors has redefined what we expect from a service provider. Their precision and attention
+                    to detail set them apart in the market. As an event planner, I need reliability, and Magnesia Motors
+                    consistently delivers. Their team's professionalism and commitment to flawless execution make them a
+                    trusted partner for every event. For anyone seeking a service that exceeds expectations, Magnesia
+                    Motors is the name to trust. </p>
                   <small>Akshay Khairnar</small>
                 </div>
               </div>
@@ -411,6 +429,56 @@
   <script src="assets/wow/wow.min.js"></script>
   <script src="assets/jquery/jquery.magnific-popup.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    $(function () {
+
+      // Get the form.
+      var form = $('#contact-form');
+
+      // Get the messages div.
+      var formMessages = $('.form-messege');
+
+      // Set up an event listener for the contact form.
+      $(form).submit(function (e) {
+        // Stop the browser from submitting the form.
+        e.preventDefault();
+
+        // Serialize the form data.
+        var formData = $(form).serialize();
+
+        // Submit the form using AJAX.
+        $.ajax({
+          type: 'POST',
+          url: $(form).attr('action'),
+          data: formData
+        })
+          .done(function (response) {
+            // Make sure that the formMessages div has the 'success' class.
+            $(formMessages).removeClass('error');
+            $(formMessages).addClass('success');
+
+            // Set the message text.
+            $(formMessages).text(response);
+
+            // Clear the form.
+            $('#contact-form input,#contact-form textarea').val('');
+          })
+          .fail(function (data) {
+            // Make sure that the formMessages div has the 'error' class.
+            $(formMessages).removeClass('success');
+            $(formMessages).addClass('error');
+
+            // Set the message text.
+            if (data.responseText !== '') {
+              $(formMessages).text(data.responseText);
+            } else {
+              $(formMessages).text('Oops! An error occured and your message could not be sent.');
+            }
+          });
+      });
+
+    });
+  </script>
 </body>
 <!-- Magnesia Motor -->
 

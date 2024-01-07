@@ -21,3 +21,10 @@ h2.headingBanner {
     -webkit-text-stroke-width: thin;
     font-variant-position: super;
 }
+
+@media (min-width: 1020px){
+    .gallary-images{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
